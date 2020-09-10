@@ -10,13 +10,15 @@
 #  8.在下方終端機鍵入git，以及鍵入heroku會出現一堆東西，代表成功安裝了
 #  9.鍵入heroku login，打上帳號密碼登入
 #  10.初始化專案(只需要做一次，後續更新不需要做): 1.鍵入git init 2.鍵入heroku git:remote -a python-trainingfu
-#  11.布署專案: 1.鍵入git add . 2.
+#  11.布署專案: 1.鍵入git add . 2.鍵入git commit -am "make it better" 3.鍵入git push heroku master
+#  12.網頁網址出現，別人電腦都可以連上線(下方網址一樣是主機名稱+根目錄)
+#  #修改程式內部處理，只要再重新打佈署的三行指令就可以了(不用初始化)
 from flask import Flask
 app_1=Flask(__name__)
 
 @app_1.route("/")
 def interface():
-    return "ok"
+    return "online"
 
 @app_1.route("/step_1")
 def step_1():
