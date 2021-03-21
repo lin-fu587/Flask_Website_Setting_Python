@@ -13,6 +13,7 @@
 #  11.布署專案: 1.鍵入git add . 2.鍵入git commit -am "make it better" 3.鍵入git push heroku master
 #  12.網頁網址出現，別人電腦都可以連上線(下方網址一樣是主機名稱+根目錄)
 #  #修改程式內部處理，只要再重新打佈署的三行指令就可以了(不用初始化)
+
 from flask import Flask
 app_1=Flask(__name__)
 
